@@ -5,76 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="icono.jpeg">
         <title>ISAIAS._.GAMERS</title>
-        <style>
-            /* Estilos para el reloj */
-            .reloj-container {
-                position: fixed;
-                top: 10px;
-                right: 10px;
-                z-index: 1000;
-                background-color: rgba(0, 0, 0, 0.7);
-                color: white;
-                padding: 8px 15px;
-                border-radius: 5px;
-                font-family: Arial, sans-serif;
-                font-size: 14px;
-                backdrop-filter: blur(3px);
-            }
-            
-            .reloj-hora {
-                font-size: 16px;
-                font-weight: bold;
-            }
-            
-            .reloj-fecha {
-                font-size: 12px;
-                margin-top: 3px;
-            }
-            
-            /* Estilos existentes de tu página */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 20px;
-                background-color: #f5f5f5;
-            }
-            
-            nav {
-                margin: 20px 0;
-            }
-            
-            nav a {
-                margin-right: 15px;
-                text-decoration: none;
-                color: #333;
-            }
-            
-            aside {
-                background-color: #eee;
-                padding: 10px;
-                margin: 20px 0;
-            }
-            
-            section {
-                margin-bottom: 30px;
-            }
-            
-            img {
-                margin-right: 10px;
-                border-radius: 5px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reloj.html">
     </head>
     <body>
-        <!-- Reloj en esquina superior derecha -->
-        <div class="reloj-container">
-            <div id="hora" class="reloj-hora"></div>
-            <div id="fecha" class="reloj-fecha"></div>
-        </div>
-<style>  h1 {
-    text-align: center;
-    color: #f70f0f;
-  }</style>
         <h1>ISAIAS._.GAMERS</h1>
         <p>Para conocer</p>
         <nav>
@@ -117,35 +51,6 @@
                 <li>2024-2025 Correos</li>
             </ul>
         </section>
-
-        <script>
-            function actualizarReloj() {
-                const ahora = new Date();
-                
-                // Obtener hora, minutos y segundos
-                let horas = ahora.getHours();
-                let minutos = ahora.getMinutes();
-                let segundos = ahora.getSeconds();
-                
-                // Formatear para que siempre muestre 2 dígitos
-                horas = horas < 10 ? '0' + horas : horas;
-                minutos = minutos < 10 ? '0' + minutos : minutos;
-                segundos = segundos < 10 ? '0' + segundos : segundos;
-                
-                // Mostrar la hora
-                document.getElementById('hora').textContent = `${horas}:${minutos}:${segundos}`;
-                
-                // Obtener y formatear la fecha
-                const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                const fechaFormateada = ahora.toLocaleDateString('es-ES', opcionesFecha);
-                
-                // Mostrar la fecha (con la primera letra en mayúscula)
-                document.getElementById('fecha').textContent = fechaFormateada.charAt(0).toUpperCase() + fechaFormateada.slice(1);
-            }
-            
-            // Actualizar el reloj inmediatamente y luego cada segundo
-            actualizarReloj();
-            setInterval(actualizarReloj, 1000);
-        </script>
+        <a href="reloj.html">reloj digital</a>
     </body>
 </html>

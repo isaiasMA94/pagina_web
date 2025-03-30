@@ -1,0 +1,11 @@
+body> h1 {
+    color:rgb(18, 35, 223);
+    background: rgb(245, 11, 11);
+}
+body > h1:hover {
+    color: whitesmoke;
+    background: rgb(18, 35, 223);
+    cursor: pointer;
+    trnasform: scale(1.1);
+    transistion: all 0.3s ease
+}
