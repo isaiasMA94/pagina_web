@@ -1,6 +1,10 @@
-body> h1 {
-    color:rgb(18, 35, 223);
-    background: rgb(245, 11, 11);
+body {
+    color:rgb(248, 5, 5);
+    background: #ff7300cc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline black solid 5px;
 }
 body > h1:hover {
     color: whitesmoke;
@@ -8,4 +12,9 @@ body > h1:hover {
     cursor: pointer;
     trnasform: scale(1.1);
     transistion: all 0.3s ease
+}
+.chikd #Isaias {
+display: block;
+width: 50%;
+margin: auto;
 }
