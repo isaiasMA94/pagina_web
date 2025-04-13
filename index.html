@@ -126,6 +126,7 @@
         }
         
         .item-list li {
+            display: grid;
             padding: 10px;
             border-bottom: 1px solid #eee;
             margin-bottom: 5px;
@@ -164,7 +165,7 @@
         }
         
         .item-list a {
-            color: #0066cc;
+            color: #000dff;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -172,6 +173,38 @@
         .item-list a:hover {
             color: #004499;
             text-decoration: underline;
+        }
+
+        #sitios {
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(251, 249, 249, 0.1);
+        }
+
+        #contacto {
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(251, 249, 249, 0.1);
+        }
+        #cursos {
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(251, 249, 249, 0.1);
         }
 
         @media (max-width: 768px) {
@@ -256,7 +289,7 @@
                 Busco oportunidades para aplicar mis habilidades en 
                 proyectos desafiantes. ¡Estoy aquí para ayudar! 
                 Además podré compartir mis experiencias en el 
-                ámbito laboral de atención al público y ventas.<br>
+                ámbito laboral de atención al público y ventas.<br><br>
                 
                 He trabajado en diversos proyectos que combinan mis conocimientos técnicos 
                 con mi capacidad de comunicación y trabajo en equipo. Mi formación continua 
@@ -290,7 +323,7 @@
             <ul class="item-list">
                 <li>Curso de Front-end Coursera Meta</li>
                 <li>Curso de Programación en Python Cisco Networ Academy</li>
-                <li>Curso Java Aristidev</li>
+                <li>Curso Java Aridev</li>
                 <li>Conocimiento Modelado de negocios UML</li>
                 <li>Conocimiento de Estructura de datos y BBDD, MySql, NoSql</li>
             </ul>
