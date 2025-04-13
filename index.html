@@ -51,7 +51,6 @@
             margin: 0 auto;
         }
 
-        
         .image-gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -103,18 +102,19 @@
             background-color: rgba(0, 0, 0, 0.3);
         }
         
-        
-        section {
+        #experiencias {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
             background: white;
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 30px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
         }
         
-        h2 {
+        #experiencias h2 {
+            grid-column: span 2;
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
             margin-top: 0;
@@ -123,8 +123,6 @@
         .item-list {
             list-style: none;
             padding: 0;
-            display: flex;
-            flex-direction: column;
         }
         
         .item-list li {
@@ -137,11 +135,38 @@
             border-bottom: none;
         }
         
+        .scroller {
+            height: 200px;
+            overflow-y: auto;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            border-left: 3px solid #333;
+            line-height: 1.6;
+        }
+        
+        .scroller::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .scroller::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .scroller::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        
+        .scroller::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
         .item-list a {
             color: #0066cc;
             text-decoration: none;
             transition: color 0.3s;
-            display: inline-flex;
         }
         
         .item-list a:hover {
@@ -149,10 +174,17 @@
             text-decoration: underline;
         }
 
-        
         @media (max-width: 768px) {
             .image-gallery {
                 grid-template-columns: 1fr;
+            }
+            
+            #experiencias {
+                grid-template-columns: 1fr;
+            }
+            
+            #experiencias h2 {
+                grid-column: span 1;
             }
             
             .custom-header {
@@ -218,6 +250,19 @@
                 <li>Desarrollo de talleres prácticos y online</li>
                 <li>Orientación en ventas y proyección de proyectos</li>
             </ul>
+            <div class="scroller">
+                Estudiante en programación y análisis de sistemas, 
+                con experiencia en diseño y modelado de impresión 3D. 
+                Busco oportunidades para aplicar mis habilidades en 
+                proyectos desafiantes. ¡Estoy aquí para ayudar! 
+                Además podré compartir mis experiencias en el 
+                ámbito laboral de atención al público y ventas.<br><br>
+                
+                He trabajado en diversos proyectos que combinan mis conocimientos técnicos 
+                con mi capacidad de comunicación y trabajo en equipo. Mi formación continua 
+                en desarrollo de software y mi experiencia práctica en modelado 3D me permiten 
+                abordar problemas desde múltiples perspectivas.
+            </div>
         </section>
         
         <section id="sitios">
