@@ -1,56 +1,237 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="description" content="Esta es mi pagina web">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" href="icono.jpeg">
-        <title>ISAIAS._.GAMERS</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reloj.html">
-    </head>
-    <body>
-        <h1>ISAIAS._.GAMERS</h1>
-        <p>Para conocer</p>
-        <nav>
-            <a href="#experiencias">Experiencias</a>
-            <a href="#plataformas">Plataformas</a>
-            <a href="/contacto.html">Contacto</a>
-            <a 
-                href="https://www.linkedin.com/in/ignacio-mu%C3%B1oz-98a627338/"
-                target="_blank"
-                noreferer
-            >linkedin</a>
-        </nav>
-        <aside>
-            <ol>
-                <li>INSTAGRAM</li>
-                <li>YOUTUBE</li>
-                <li>GITHUB</li>
-                <li>THREADS</li>
-            </ol>
-        </aside>
-        <section>
-            <img
-                src="/Isaias.jpeg"
-                width="200"
-                height="200"
-                alt="esta es una imagen de isaias"
-                />
-                <img
-                src="/logo.jpeg"
-                width="200"
-                height="200"
-                alt="esta es una imagen de isaias"
-                />
-        </section>
-        <section>
-            <h2 id="experiencias">Experiencias</h2>
-            <ul>
-                <li>2020-2021 Transgrajales</li>
-                <li>2022-2024 App Traansporte</li>
-                <li>2024-2025 Correos</li>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: #f0f0f0;
+        }
+        
+        .custom-header {
+            background-color: black;
+            color: gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .header-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .header-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header-nav a {
+            color: gray;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .header-nav a:hover {
+            color: white;
+        }
+        
+        .main-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: calc(100vh - 68px); 
+        }
+        
+        aside {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            height: 100%;
+        }
+        
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        aside li {
+            padding: 10px 0;
+            cursor: pointer;
+        }
+        
+        aside li:hover {
+            color: #ccc;
+        }
+        
+        main {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .image-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .image-caption {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .item-list li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 5px;
+        }
+        
+        .item-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="custom-header">
+        <span class="header-title">PORTAFOLIO</span> 
+        <nav class="header-nav">
+            <ul> 
+                <li><a href="#experiencias">Experiencias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sitios">Sitios</a></li>
+                <li><a href="#cursos">Cursos</a></li>
             </ul>
-        </section>
-        <a href="reloj.html">reloj digital</a>
-    </body>
+        </nav>
+    </header>  
+        <main>
+           
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="logo.jpeg" alt="Logo">
+                    <div class="image-caption">
+                        <h3>LOGO ISAIAS._.GAMERS</h3>
+                        <p>Gaming and Print 3D</p>
+                    </div>
+                </div>
+                
+                <div class="image-card">
+                    <img src="icono.jpeg" alt="Icono">
+                    <div class="image-caption">
+                        <h3>ICONO MARCA</h3>
+                        <p>Consejos en gaming y programación</p>
+                    </div>
+                </div>
+                
+                <div class="image-card">
+                    <img src="Isaias.jpeg" alt="presentación">
+                    <div class="image-caption">
+                        <h3>Presentación personal</h3>
+                        <p>Disponibilidad para ayudar en tus proyectos</p>
+                    </div>
+                </div>
+            </div>
+            
+            <section id="experiencias">
+                <h2>Experiencias</h2>
+                <ul class="item-list">
+                    <li>Estudiante de programacióny analisis de sistemas</li>
+                    <li>Diseñador y modelador de impresión 3D</li>
+                    <li>Experiencia en Atencion al publico y ventas</li>
+                    <li>Desarrollo de talleres practicos y online</li>
+                    <li>Orientacion en ventas y proyección de proyectos</li>
+                </ul>
+            </section>
+            
+            <section id="sitios">
+                <h2>Sitios</h2>
+                <ul class="item-list">
+                    <li><a 
+                        href="https://www.linkedin.com/in/ignacio-mu%C3%B1oz-98a627338/"
+                        target="_blank"
+                        noreferer
+                    >linkedin</a></li>
+                    <li><a 
+                        href="https://www.youtube.com/@isaias_lord785"
+                        target="_blank"
+                        noreferer
+                    >Youtube</a></li>
+                    <li><a 
+                        href="https://github.com/isaiasMA94"
+                        target="_blank"
+                        noreferer
+                    >Github</a></li>
+                    <li><a 
+                        href="https://www.instagram.com/isaia._.gamer/"
+                        target="_blank"
+                        noreferer
+                    >Instagram</a></li>
+                </ul>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <ul class="item-list">
+                    <li>Email: isaiasGamers@gmail.net</li>
+                    <li>Teléfono: 9123425</li>
+                    <li>LinkedIn: Ignacio Muñoz</li>
+                    <li>GitHub: IsaiasMA94</li>
+                    
+                </ul>
+            </section>
+            
+            <section id="cursos">
+                <h2>Cursos y Certificados</h2>
+                <ul class="item-list">
+                    <li>Curso de Front-end Coursera Meta</li>
+                    <li>Curso de Programación en Python Cisco Networ Academy</li>
+                    <li>Curso Java Aridev</li>
+                    <li>Conocimiento Modelado de negocios UML </li>
+                    <li>Conocimiento de Estructura de datos y BBDD, MySql, NoSql</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
 </html>
